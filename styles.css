@@ -14,11 +14,25 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+      
+    
 }
 
 h1, h2, h3 {
     color: #0056b3;
 }
+
+/* Specific instance of h1 with different color */
+.specific-h1 {
+    color: #fafaf9;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 
 a {
     text-decoration: none;
@@ -30,30 +44,49 @@ a:hover {
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero {
-    background: url('hero-background.jpg') no-repeat center center/cover;
-    color: #fff;
+    height: 100vh; /* Full screen height */
+    background-image: url('Images/hero\ background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white; /* Text color */
+}
+
+.hero .overlay {
     text-align: center;
-    padding: 150px 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin: 0;
+    font-size: 3rem; /* Adjust font size */
+    margin-bottom: 10px;
 }
 
 .hero .tagline {
     font-size: 1.5rem;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .hero .cta-button {
     background: #0056b3;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
+    text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
 }
+
+.hero .cta-button:hover {
+    background: #004494;
+}
+
 
 /* About Section */
 .about {
@@ -85,15 +118,22 @@ a:hover {
 }
 
 /* Services Section */
+/* Services Section */
 .services {
-    background-color: #f4f4f9;
     padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    color: #0056b3;
+    margin-bottom: 20px;
 }
 
 .service-cards {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -102,12 +142,57 @@ a:hover {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+    flex: 1 1 calc(33.333% - 20px); /* Responsive width for 3 cards per row */
+    max-width: 300px;
+}
+
+.card img {
+    width: 100%; /* Image width fills the card */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the entire image fits without cropping */
+    border-radius: 10px; /* Keep the rounded corners */
+    margin-bottom: 15px;
+    background-color: #f4f4f9; /* Optional: Add a background color for empty spaces */
 }
 
 .card h3 {
-    margin-top: 0;
+    color: #0056b3;
+    margin: 10px 0;
+    font-size: 1.2rem;
 }
+
+.card p {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+/* Tick List Styling */
+.tick-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align items to the left */
+}
+
+.tick-list li {
+    position: relative;
+    padding-left: 25px; /* Space for the tick icon */
+    margin-bottom: 10px; /* Spacing between list items */
+    font-size: 0.95rem;
+    color: #333;
+    text-align: left; /* Ensure the text aligns left */
+}
+
+.tick-list li::before {
+    content: "✔"; /* Unicode for a checkmark */
+    color: green; /* Set tick color */
+    font-size: 1rem; /* Adjust size */
+    position: absolute;
+    left: 0; /* Position the tick */
+    top: 0; /* Align with text */
+}
+
+
 
 /* Portfolio Section */
 .portfolio {

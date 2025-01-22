@@ -7,25 +7,30 @@
     <title>Portfolio - Your Name</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
 </head>
 <body>
     <!-- Header Section -->
+     
     <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Francis</h1>
-                <p class="tagline">Cybersecurity Expert | IT Consultant</p>
-                <a href="#about" class="cta-button">Learn More</a>
-            </div>
+        <div class="overlay">
+            <h1 class="specific-h1">Francis Gitau</h1>
+            <p class="tagline">Approachable, efficient, and results-oriented expert</p>
+            <a href="#about" class="cta-button">Learn More</a>
         </div>
     </header>
+    
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I am a dedicated cybersecurity expert with a proven track record of delivering innovative solutions for IT challenges. My expertise includes vulnerability assessments, IT audits, and consulting services to enhance organizational security.</p>
+            <p>With years of proven experience in IT audits, cybersecurity consulting, and penetration testing, I specialize in helping organizations identify vulnerabilities, optimize IT systems, and implement robust security measures.
+
+                My approach is rooted in trust, innovation, and excellence. I pride myself on tailoring solutions that align with your unique business goals. From safeguarding critical assets to navigating complex regulatory requirements, I am committed to delivering measurable results that ensure your peace of mind.
+                
+                At the heart of my services lies a client-first philosophy. I believe that every business deserves a partner who listens, understands, and delivers actionable insights. Whether it’s conducting in-depth audits to enhance compliance, designing comprehensive cybersecurity strategies, or stress-testing your systems to defend against potential attacks, my mission is to secure your success.
+                
+                Let me help you stay ahead in an ever-evolving threat landscape. Reach out today to discuss how we can work together to build a resilient and secure IT environment for your organization. Together, we’ll protect what matters most..</p>
             <div class="skills">
                 <div class="skill">Penetration Testing</div>
                 <div class="skill">IT Audits</div>
@@ -35,56 +40,58 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Services</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <h3>IT Audits</h3>
-                    <p>Comprehensive reviews to ensure your IT systems meet compliance standards and optimize performance.</p>
-                </div>
-                <div class="card">
-                    <h3>Cybersecurity Consulting</h3>
-                    <p>Customized solutions to protect your business from digital threats and vulnerabilities.</p>
-                </div>
-                <div class="card">
-                    <h3>Penetration Testing</h3>
-                    <p>Identify and mitigate security risks with thorough testing of your infrastructure and applications.</p>
-                </div>
+   <!-- Services Section -->
+<!-- Services Section -->
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <h2>Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="images/Services/IT Audit.jpg" alt="IT Audits">
+                <h3>IT Audits</h3>
+                <ul class="tick-list">
+                    <li>Review IT systems to ensure compliance with industry standards and regulations.</li>
+                    <li>Analyze system logs and configurations to identify security gaps.</li>
+                    <li>Evaluate IT governance policies to align with organizational goals.</li>
+                    <li>Provide recommendations to improve system performance and efficiency.</li>
+                    <li>Perform risk assessments to mitigate potential vulnerabilities.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="images/Services/cyber consultin.jpg" alt="Cybersecurity Consulting">
+                <h3>Cybersecurity Consulting</h3>
+                <ul class="tick-list">
+                    <li>Develop comprehensive cybersecurity strategies tailored to business needs.</li>
+                    <li>Conduct penetration testing to identify and address vulnerabilities.</li>
+                    <li>Implement robust firewalls and intrusion detection systems.</li>
+                    <li>Provide employee training on recognizing and mitigating cyber threats.</li>
+                    <li>Ensure compliance with data protection regulations like GDPR and HIPAA.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="images/Services/VAPT 1.webp" alt="Penetration Testing">
+                <h3>Penetration Testing</h3>
+                <ul class="tick-list">
+                    <li>Simulate cyberattacks to evaluate the effectiveness of security measures.</li>
+                    <li>Identify vulnerabilities in web applications, networks, and systems.</li>
+                    <li>Generate detailed reports with prioritized recommendations for mitigation.</li>
+                    <li>Test the resilience of security protocols under various attack scenarios.</li>
+                    <li>Ensure compliance with industry-specific security standards like PCI DSS.</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">Project 1</div>
-                <div class="portfolio-item">Project 2</div>
-                <div class="portfolio-item">Project 3</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>Testimonials</h2>
-            <div class="testimonial-carousel">
-                <p>"Francis provided exceptional consulting services that greatly improved our security posture." - Client A</p>
-                <p>"Their expertise in IT audits saved us significant costs and ensured compliance." - Client B</p>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Me</h2>
             <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="name" placeholder="Francis" required>
+                <input type="email" name="email" placeholder="franciskamau2004@gmail.com" required>
                 <input type="text" name="subject" placeholder="Subject">
                 <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
@@ -95,7 +102,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>&copy; 2025 Francis Gitau. All rights reserved.</p>
             <div class="social-links">
                 <a href="#">LinkedIn</a>
                 <a href="#">Twitter</a>
